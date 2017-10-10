@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    @*Здесь подключили bootstrap css и библиотек JQuery*@
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    @*Здесь подключили  библиотек JQuery*@
+    <script src="~/Scripts/jquery-1.9.1.min.js" type="text/javascript"></script> 
+
+    <title>Poem</title>
+</head>
+<body>
+    <div class="container"> 
+
+        <div class="row">
+          <div class="col-sm-12">
+           <h2>Получился стих</h2>
+              <br/>
+              <br/>
+          </div>
+        </div>
+
+       <div class="row">
+            <div class="col-lg-6 col-sm-8">
+                <p>@ViewBag.Words2[0]  @ViewBag.Words2[1]   @ViewBag.Words2[2]</p>
+                <p>@ViewBag.Words3[0]   @ViewBag.Words3[1]    @ViewBag.Words3[2]</p>
+                <p>@ViewBag.Words4[0]   @ViewBag.Words4[1]     @ViewBag.Words4[2]</p>
+                <p>@ViewBag.Words5[0]   @ViewBag.Words5[1]     @ViewBag.Words5[2]</p>
+             </div>
+
+            <div class="col-lg-6 col-sm-4">
+
+                <img src="~/img/1.gif" alt="">
+
+            </div>
+
+      </div>
+      <br/>
+      <br/>
+
+     <div class="row">
+       @Html.ActionLink("Вернуться на главную", "Index")
+      
+     </div>
+     
+    
+
+    </div>
+
+    <script src="~/Scripts//bootstrap.min.js"></script>
+</body>
+</html>
